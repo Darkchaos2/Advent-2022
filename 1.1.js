@@ -8,8 +8,6 @@ maxLoopID = 0;
 document.querySelector('pre').innerText.split("\n").forEach(e => {
     loopID++;
     if (e == "") {
-        console.log(curr);
-        console.log(currMax);
         if (curr > currMax) {
             currMax = curr;
             currMaxElf = currElf;
