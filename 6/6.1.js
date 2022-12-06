@@ -1,1 +1,1 @@
-document.querySelector('pre').innerText.split("").reduce((acc, char, charIdx, arr) => !arr.join('').substring(charIdx, charIdx + 4).split("").sort().some((e, i, buffer) => e == buffer?.[i + 1]) ? [...acc, charIdx + 4] : acc, [])
+document.querySelector('pre').innerText.split("").reduce((acc, char, charIdx, arr) => !arr.slice(charIdx, charIdx + 4).sort().some((e, i, buffer) => e == buffer?.[i + 1]) ? [...acc, charIdx + 4] : acc, [])
