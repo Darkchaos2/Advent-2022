@@ -1,0 +1,1 @@
+document.querySelector('pre').innerText.split("").reduce((acc, char, charIdx, arr) => !arr.join('').substring(charIdx, charIdx + 14).split("").sort().some((e, i, buffer) => e == buffer?.[i + 1]) ? [...acc, charIdx + 14] : acc, [])
